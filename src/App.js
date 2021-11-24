@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import Counter from './components/Counter/Counter';
+import SideBar from './components/SideBar/SideBar';
+import UserGreet from './components/UserGreet/UserGreet';
+import "./App.css"
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      //<Counter /> 
+      //<UserGreet />
+    //<div className="sidebars">
+    <div style={{display: "flex", justifyContent: "space-between"}}>
+      <SideBar place="left"/>
+      <SideBar place="right"/>
     </div>
-  );
-}
+    );
+};
 
 export default App;
